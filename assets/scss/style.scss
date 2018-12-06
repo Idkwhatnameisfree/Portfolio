@@ -1,1 +1,41 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../scss/fonts.scss";
+@import "../scss/layout.scss";
+
+* {
+  font-family: 'Rubik';
+}
+.bg-header {
+  background-color: rgba($gray-200, $modal-backdrop-opacity)
+}
+.bg-main {
+  background-color: rgba($gray-300, $modal-backdrop-opacity);
+}
+.zoom {
+  transition: transform .3s;
+}
+.zoom:hover {
+  transform: scale(1.05);
+}
+.text-shadow {
+  text-shadow: 1px 1px 1px $gray-100;
+}
+.no-show {
+  display: none;
+}
+.carousel-content {
+  position: absolute;
+  bottom: 42%;
+  left: 15%;
+  z-index: 20;
+  color: $white;
+}
+.carousel-content2 {
+  position: absolute;
+  bottom: 42%;
+  left: 15%;
+  z-index: 20;
+  color: $black;
+  text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 0.8);
+  font-size: $font-size-lg;
+}
